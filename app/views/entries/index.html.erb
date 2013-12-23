@@ -1,0 +1,9 @@
+<h1>Entries</h1>
+<p>
+	<% @entries.each do |entry| %>
+  	<%= render "entries/entry", entry: entry %>
+	<% end %>
+
+	<%= link_to 'Add an Entry', new_entry_path %>
+
+</p>
