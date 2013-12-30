@@ -34,8 +34,7 @@ class CategoriesController < ApplicationController
     end
   end
 
-  def delete
-    @category = Category.find(params[:id])
+  def destroy
     @category.destroy
     redirect_to '/categories', notice: "Category destroyed"
   end
